@@ -28,6 +28,7 @@ flutter pub get
 
 - [Android Studio](https://developer.android.com/studio)  /  [Xcode](https://developer.apple.com/xcode/)
 - Android device (Virtual / Physical)
+- Flutter CLI
 
 
 ### Testing Application

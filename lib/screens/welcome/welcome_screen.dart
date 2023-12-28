@@ -110,24 +110,25 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    width: 320,
-                    child: DropdownButton<String>(
-                      alignment: Alignment.center,
-                      value: selectedCategory,
-                      onChanged: (value) {
-                        setState(() {
-                          selectedCategory = value!;
-                        });
-                      },
-                      items: CategoryList.map((item) {
-                        return DropdownMenuItem<String>(
-                          value: item,
-                          child: Text(item),
-                        );
-                      }).toList(),
-                    ),
+                  // SizedBox(
+                  // width: 100,
+                  // child:
+                  DropdownButton<String>(
+                    alignment: Alignment.center,
+                    value: selectedCategory,
+                    onChanged: (value) {
+                      setState(() {
+                        selectedCategory = value!;
+                      });
+                    },
+                    items: CategoryList.map((item) {
+                      return DropdownMenuItem<String>(
+                        value: item,
+                        child: Text(item),
+                      );
+                    }).toList(),
                   ),
+                  // ),
                   const Spacer(), // 1/6
 
                   InkWell(
